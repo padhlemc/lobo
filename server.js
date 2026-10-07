@@ -318,8 +318,10 @@ app.delete("/api/registrations/:id", async (req, res) => {
     console.error("Error deleting registration:", err);
     res.status(500).json({ error: "Failed to cancel registration" });
   }
-// Fallback for SPA routing
-app.get("*", (req, res) => {
+});
+
+// Fallback for SPA routing (Express 5 compatible)
+app.use((req, res) => {
   const indexPath = path.join(clientBuildPath, "index.html");
   res.sendFile(indexPath);
 });

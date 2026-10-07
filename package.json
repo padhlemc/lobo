@@ -1,0 +1,25 @@
+{
+  "name": "course-registration-app",
+  "version": "1.0.0",
+  "description": "Course Registration & Management System using React, Express, Node.js, and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "node",
+    "mongodb",
+    "course-registration"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "mongodb": "^7.7.0"
+  }
+}
